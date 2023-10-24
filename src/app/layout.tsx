@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Fruits app',
   description: 'Eat healthy fruits',
+  keywords: 'avacado, pears, berries'
 }
 
 export default function RootLayout({
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <div className='relative top-[150px]'>
+          {children}
+        </div>
         <Footer />
         </body>
     </html>

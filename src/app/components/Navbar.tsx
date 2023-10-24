@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import CartIcon from './CartIcon'
+import Link from 'next/link'
 
 export default function Navbar() {
   return (
@@ -11,11 +12,26 @@ export default function Navbar() {
       </aside>
 
       <ul className='flex items-center justify-between capitalize gap-x-8'>
+        <Link href='/'>
         <li>Home</li>
+        </Link>
+
+        <Link href='/about'>
         <li>about</li>
+        </Link>
+
+        <Link href='/shop'>
         <li>shop</li>
+        </Link>
+
+        <Link href='/donate'>
         <li>donate</li>
+        </Link>
+
+        <Link href='/contact'>
         <li>contact</li>
+        </Link>
+
         <li>
           <CartIcon />
         </li>

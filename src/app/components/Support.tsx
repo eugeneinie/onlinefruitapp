@@ -35,7 +35,7 @@ export default function Support() {
     <section className={`w-[80%] m-auto ${styles.support}`}>
         <h2 className="px-[2em] py-3 border-l-8 border-solid border-l-[#e55] my-6 ">Support</h2>
 
-        <section className="grid grid-cols-3 gap-[50px] ">
+        <section className="grid sm:grid-cols-3 grid-cols-1 gap-[50px] ">
             {supportGrid}
         </section>
     </section>

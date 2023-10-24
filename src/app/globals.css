@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 
+nav a{
+    @apply px-5 py-2
+}
+nav a:hover{
+    @apply bg-black rounded-md
+}
