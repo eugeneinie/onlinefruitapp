@@ -5,7 +5,7 @@ type fruitProps={
   products:{
   name:string,
   price:number,
-  description:string,
+  description:string[],
   type:string
 }[]
 }
