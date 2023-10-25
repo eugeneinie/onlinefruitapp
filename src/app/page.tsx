@@ -40,12 +40,13 @@ export const fruits = [
 ];
 
 export default function Home() {
+ 
   return (
     <>
     <main className='min-h-screen'>
       <Banner />
       <Support />
-      <Fruits products = {fruits}/>
+      <Fruits  products = {fruits}/>
       <AboutSection />
     </main>
     </>
