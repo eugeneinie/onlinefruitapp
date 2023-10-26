@@ -5,7 +5,7 @@ import {AiFillGithub, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai'
 
 export default function Footer() {
   return (
-    <footer className='h-[200px] bg-black text-white flex flex-col justify-center'>
+    <footer className='h-[200px] bg-black text-white flex flex-col justify-center mt-[200px]'>
         <div className='flex justify-around items-center '>
             <div className='flex items-center space-x-4'>
                 <Image src='/images/android-chrome-192x192.png' alt='logo' width={50} height={50}/>
