@@ -1,0 +1,12 @@
+.cat ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-right: 50px;
+}
+
+.cat a{
+    border-radius: 8px;
+    padding: 10px 40px;
+    border: 5px solid rgb(52, 52, 52);
+}
