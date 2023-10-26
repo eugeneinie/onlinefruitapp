@@ -39,7 +39,6 @@ export default function Fruits({products}:fruitProps) {
         ))}
       </aside>
 
-      {/* Move this button outside of the map loop to prevent multiple buttons */}
       <Link href='/shop'>
         <button className='text-center w-1/4  m-auto block bg-slate-900 text-white rounded-md p-3 mt-5'>
           <span>See all fruits</span>

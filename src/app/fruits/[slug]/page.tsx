@@ -1,6 +1,11 @@
 import { fruits } from "@/app/page"
 
-export default function Page({params}) {
+type paramsType = {
+  params:string 
+}
+
+
+export default function Page({params}:paramsType) {
     const fruitIndex = fruits.find(fruit => fruit.name === params.slug)
   return (
     <div className="min-h-screen">
