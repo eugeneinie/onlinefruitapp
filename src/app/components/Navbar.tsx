@@ -4,9 +4,10 @@ import React, {useState} from 'react'
 import CartIcon from './CartIcon'
 import Link from 'next/link'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { MdCancel } from 'react-icons/md'
 
 export default function Navbar() {
-  const [mobileMenuVisible, setMobileMenuVisible] = useState(true);
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   // Function to toggle the mobile menu visibility
   const toggleMobileMenu = () => {
@@ -14,19 +15,24 @@ export default function Navbar() {
   }
   return (
     <nav className='bg-[#e55] sm:h-[80px] h-[300px] flex sm:items-center items-start justify-around text-white'>
+      <Link href='/'>
       <aside className='flex items-center gap-x-2'>
         <Image src='/images/android-chrome-192x192.png' alt='logo' width={50} height={50}/>
         <h3>Fruits</h3>
       </aside>
+      </Link>
 
       <ul className='flex sm:flex-row flex-col items-center justify-between capitalize gap-x-8'>
-        <Link href='/contact' className='sm:hidden block' onClick={toggleMobileMenu}>
-        <li>
+        <Link href='/'onClick={toggleMobileMenu}>
+        { mobileMenuVisible && <li  className='sm:hidden block' >
           <GiHamburgerMenu />
-        </li>
+        </li>}
+        { !mobileMenuVisible && <li  className='sm:hidden' >
+          <MdCancel />
+        </li>}
         </Link>
         
-        { mobileMenuVisible && 
+        { !mobileMenuVisible && 
         <>
         <Link href='/' className="sm:block">
         <li>Home</li>
