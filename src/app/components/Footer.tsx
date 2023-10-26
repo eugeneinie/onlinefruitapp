@@ -13,15 +13,15 @@ export default function Footer() {
             </div>
 
             <div className='flex space-x-2 text-3xl'>
-                <Link href=''>
+                <Link href='https://github.com/coderitec' target='_blank'>
                 <AiFillGithub />
                 </Link>
 
-                <Link href=''>
+                <Link href='https://www.linkedin.com/in/franc-enemuo/' target='_blank'>
                 <AiFillLinkedin />
                 </Link>
 
-                <Link href=''>
+                <Link href='https://www.instagram.com/coderite_/' target='_blank'>
                 <AiFillInstagram />
                 </Link>
 
