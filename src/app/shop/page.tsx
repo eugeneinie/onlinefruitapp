@@ -6,8 +6,7 @@ export default function page() {
  
   return (
     <section className='w-4/5 m-auto py-8 flex flex-col gap-y-4'>
-      <h2 className='font-semibold'>Fruits products</h2>
-      <h3 className='text-5xl font-bold'>Open 24 / 7 / 365</h3>
+      
       <aside className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4'>
       {fruits.map((fruit, index) => (
         <div key={index} className='text-center'>

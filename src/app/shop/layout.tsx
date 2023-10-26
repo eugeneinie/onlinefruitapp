@@ -1,11 +1,6 @@
-import type { Metadata } from 'next'
-
-
-export const metadata: Metadata = {
-    title: 'Shop | Fruits app',
-    description: 'Eat healthy fruits',
-    keywords: 'avacado, pears, berries'
-  }
+import React from 'react'
+import Category from '../components/Category'
+import ShopHeader from './ShopHeader'
 
 export default function layout({
     children,
@@ -13,8 +8,12 @@ export default function layout({
     children: React.ReactNode
   }) {
   return (
-    <div className='min-h-screen'>
+    <>
+    {/* <ShopHeader /> */}
+    <div className='relative top-[40px] flex items-start w-4/5 mx-auto'>
+        <Category />
         {children}
     </div>
+    </>
   )
 }

@@ -7,6 +7,16 @@
 
 .cat a{
     border-radius: 8px;
-    padding: 10px 40px;
+    padding: 10px 0;
     border: 5px solid rgb(52, 52, 52);
+    width: 200px;
+    text-align: center;
+}
+.cat a:hover{
+    background-color:  rgb(52, 52, 52);
+    color: #fff;
+}
+.cat a:focus{
+    background-color:  rgb(52, 52, 52);
+    color: #fff;
 }
