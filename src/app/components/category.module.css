@@ -8,7 +8,7 @@
 .cat a{
     border-radius: 8px;
     padding: 10px 0;
-    border: 5px solid rgb(52, 52, 52);
+    border: 5px solid hsl(0, 92%, 85%);
     width: 200px;
     text-align: center;
 }
